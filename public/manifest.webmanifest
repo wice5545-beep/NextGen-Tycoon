@@ -1,0 +1,14 @@
+{
+  "name": "NextGen Tycoon",
+  "short_name": "NextGen",
+  "description": "AAA gaming-industry tycoon — 1970 → 2100.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#070a12",
+  "theme_color": "#070a12",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

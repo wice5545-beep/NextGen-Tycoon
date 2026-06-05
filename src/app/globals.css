@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-bg-900 text-ink-100 font-sans antialiased;
+  background-image: theme("backgroundImage.radial-brand");
+  background-attachment: fixed;
+  overscroll-behavior: none;
+}
+
+/* faint grid overlay behind the app */
+.bg-grid {
+  background-image: theme("backgroundImage.grid-faint");
+  background-size: 32px 32px;
+}
+
+/* glass surface */
+.glass {
+  background: rgba(255, 255, 255, 0.045);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-strong {
+  background: rgba(16, 22, 38, 0.72);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+/* scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* gradient text accent */
+.text-grad {
+  background: linear-gradient(90deg, #9b86ff, #27d6ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* mobile safe area */
+.safe-b {
+  padding-bottom: env(safe-area-inset-bottom);
+}
