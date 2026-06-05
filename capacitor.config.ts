@@ -7,6 +7,7 @@ const config: CapacitorConfig = {
   backgroundColor: "#070a12",
   android: {
     allowMixedContent: false,
+    orientation: 'landscape',
   },
   server: {
     androidScheme: "https",

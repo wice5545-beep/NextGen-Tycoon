@@ -4,7 +4,7 @@
   "description": "AAA gaming-industry tycoon — 1970 → 2100.",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "any",
+  "orientation": "landscape",
   "background_color": "#070a12",
   "theme_color": "#070a12",
   "icons": [
